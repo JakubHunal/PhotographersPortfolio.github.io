@@ -92,7 +92,7 @@
         }
         
         h1 {
-            margin-top: 20px;
+            margin-top: 40px;
             width: 100%;
             text-align: center;
             font-size: 3em;
@@ -110,6 +110,16 @@
             font-size: 1.5em;
             text-align: center;
             line-height: 1.5em;
+            transition: all 1s ease;
+        }
+        
+        .container:hover {
+            border-top-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            cursor: pointer;
+            transition: all 1s ease;
         }
         
         .social {
@@ -125,7 +135,7 @@
         
         .social div:hover {
             cursor: pointer;
-            opacity: 0.8;
+            opacity: 0.6;
         }
         
         a {
@@ -133,10 +143,9 @@
             text-decoration: none;
         }
         
-        @media(max-width:1150px) {
+        @media(max-width:1400px) {
             .container {
-                width: 100%;
-                margin: 0px;
+                margin: 0px 20px;
             }
         }
         
@@ -160,7 +169,7 @@
             }
         }
         
-        @media(max-width:400px) {
+        @media(max-width:450px) {
             .container {
                 font-size: 1.2em;
                 padding: 20px;
@@ -204,11 +213,12 @@
             document.querySelector(".right").style.transition = "all 1s ease";
             document.querySelector(".right").style.cursor = "pointer";
         });
+        let match = window.matchMedia("(min-width: 1000px)");
         document.querySelector(".right").addEventListener("mouseleave", function(event) {
-            if (screen.width > 1000) {
+            if (match.matches) {
                 document.querySelector(".right").style.width = "60%";
-
             }
+
         });
     </script>
 </body>
