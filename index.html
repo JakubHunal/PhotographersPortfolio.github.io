@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 
 <head>
     <meta charset="UTF-8">
@@ -9,221 +9,89 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <title>Document</title>
-    <style>
-        body {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-        
-        .left {
-            width: 40%;
-            left: 0%;
-            top: 0%;
-            position: absolute;
-            height: 100vh;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            background-color: white;
-        }
-        
-        .right {
-            right: 0%;
-            top: 0%;
-            position: absolute;
-            width: 60%;
-            height: 100vh;
-            display: flex;
-            flex-wrap: wrap;
-            overflow-y: scroll;
-        }
-        
-        .right div {
-            width: 100%;
-            height: 100vh;
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        
-        .first {
-            background-image: url("bridge.jpg");
-        }
-        
-        .second {
-            background-image: url("mountains.jpg");
-        }
-        
-        .third {
-            background-image: url("desert.jpg");
-        }
-        
-        .fourth {
-            background-image: url("whale.jpg");
-        }
-        
-        .fifth {
-            background-image: url("forest.jpg");
-        }
-        
-        .photo {
-            width: 100%;
-        }
-        
-        .box {
-            margin-left: auto;
-            margin-right: auto;
-            width: 200px;
-            height: 200px;
-            background-image: url("girl.jpg");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            border-radius: 50%;
-        }
-        
-        .box:hover {
-            opacity: 0.8;
-            cursor: pointer;
-        }
-        
-        h1 {
-            margin-top: 40px;
-            width: 100%;
-            text-align: center;
-            font-size: 3em;
-            font-family: 'Dancing Script';
-        }
-        
-        .container {
-            background-color: black;
-            margin: 0px 80px;
-            padding: 40px;
-            border-top-left-radius: 50px;
-            border-bottom-right-radius: 50px;
-            color: white;
-            font-family: 'Quicksand';
-            font-size: 1.5em;
-            text-align: center;
-            line-height: 1.5em;
-            transition: all 1s ease;
-        }
-        
-        .container:hover {
-            border-top-left-radius: 0px;
-            border-bottom-right-radius: 0px;
-            border-top-right-radius: 50px;
-            border-bottom-left-radius: 50px;
-            cursor: pointer;
-            transition: all 1s ease;
-        }
-        
-        .social {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-        
-        .social div {
-            font-size: 3em;
-            margin: 0px 30px;
-        }
-        
-        .social div:hover {
-            cursor: pointer;
-            opacity: 0.6;
-        }
-        
-        a {
-            color: black;
-            text-decoration: none;
-        }
-        
-        @media(max-width:1400px) {
-            .container {
-                margin: 0px 20px;
-            }
-        }
-        
-        @media(max-width:1150px) {
-            body {
-                height: max-content;
-                overflow: auto;
-                display: flex;
-                flex-wrap: wrap;
-            }
-            .left {
-                position: relative;
-                width: 100%;
-                height: 100vh;
-            }
-            .right {
-                position: relative;
-                width: 100%;
-                height: max-content;
-                overflow: auto;
-            }
-        }
-        
-        @media(max-width:450px) {
-            .container {
-                font-size: 1.2em;
-                padding: 20px;
-            }
-            .box {
-                width: 150px;
-                height: 150px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styly.css">
+    <title>Jessica Jirůtková</title>
 </head>
 
 <body>
-
-    <div class="left">
-        <div class="photo">
-            <div class="box"></div>
+    <div class="arrowHome">
+        <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <section class="landing" id="home">
+        <div class="dark"></div>
+        <div class="video">
+            <video src="video.mp4" autoplay muted loop></video>
+        </div>
+        <div class="text">
             <h1>Jessica Jirůtková</h1>
+            <p>profesionální fotografka</p>
         </div>
-        <div class="container">
-            <p>Vítám Tě na své osobní stránce. Co se tu dozvíš? Můžeš si prohlédnout mé nejhezčí fotografie. Nejradějí fotím přírodu, ale zvládnu cokoli. Focení je moje vášeň a proto se nebojím pustit do jakéhokoli projektu, který mi nabídneš. Pokud tě moje
-                fotografie zaujali a budeš mít zájem o spolupráci, tak mě neváhej kontakovat.
-            </p>
+        <div class="buttons">
+            <div class="button">
+                <a href="#aboutMe">Info o mně</a>
+            </div>
+            <div class="button">
+                <a href="#portfolio">Mé portfolio</a>
+            </div>
+
         </div>
-        <div class="social">
-            <div class="ig"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></div>
-            <div class="fb"><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></div>
-            <div class="in"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></div>
-        </div>
-    </div>
-    <div class="right">
-        <div class="first"></div>
-        <div class="second"></div>
-        <div class="third"></div>
-        <div class="fourth"></div>
-        <div class="fifth"></div>
-    </div>
+
+    </section>
+    <section id="aboutMe">
+        <main>
+            <div class="left"> </div>
+            <div class="right">
+                <div class="photo">
+                </div>
+                <div class="information">
+                    <p>Vítám Tě na své osobní stránce. Co se tu dozvíš? Můžeš si prohlédnout mé nejhezčí fotografie. Nejradějí fotím přírodu, ale zkušenosti mám i s focením svateb nebo produktů. Focení je moje vášeň a proto se nebojím pustit do jakéhokoli
+                        projektu, který mi nabídneš. Pokud tě moje fotografie zaujali a budeš mít zájem o spolupráci, tak mě neváhej kontakovat.
+                    </p>
+                </div>
+                <div class="social">
+                    <div class="ig"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></div>
+                    <div class="fb"><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></div>
+                    <div class="in"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></div>
+                </div>
 
 
+            </div>
+        </main>
+    </section>
+    <section id="portfolio">
+        <main>
+            <div class="container">
+                <div class="image weddings">
+                </div>
+                <div class="button">
+                    <a href="weddings.html">Svatby</a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="image nature">
+                </div>
+                <div class="button">
+                    <a href="nature.html">Příroda</a>
+                </div>
+            </div>
+            <div class="container containerProducts">
+                <div class="image products">
+                </div>
+                <div class="button">
+                    <a href="products.html">Produkty</a>
+                </div>
+            </div>
+        </main>
+    </section>
+    <footer>
+        <main>
+            <div class="copyright">&copy;2021</div>
+            <div class="author">Web & Design od Jakub Hunal</div>
+        </main>
 
-    <script>
-        document.querySelector(".right").addEventListener("mouseover", function(event) {
-            document.querySelector(".right").style.width = "100%";
-            document.querySelector(".right").style.transition = "all 1s ease";
-            document.querySelector(".right").style.cursor = "pointer";
-        });
-        let match = window.matchMedia("(min-width: 1000px)");
-        document.querySelector(".right").addEventListener("mouseleave", function(event) {
-            if (match.matches) {
-                document.querySelector(".right").style.width = "60%";
-            }
+    </footer>
+    <script src="JavaScript.js"></script>
 
-        });
-    </script>
 </body>
 
 </html>
