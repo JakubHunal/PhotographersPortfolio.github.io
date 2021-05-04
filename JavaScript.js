@@ -7,9 +7,6 @@ window.addEventListener("scroll", function(e) {
     }
 })
 
-let video = document.querySelector("video");
-video.play();
-
 let i = 0;
 let butNext = document.querySelector(".butNext");
 let butPreview = document.querySelector(".butPreview");
